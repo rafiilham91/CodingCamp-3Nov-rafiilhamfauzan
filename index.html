@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Work Company</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="smooth-scroll">
+    <!-- header -->
+    <header class="bg-grey-600">
+        <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 h-15 w-15">
+                        <img src="image/profile_logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-gray-700 hover:text-teal-600 px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
+                        <a href="#about" class="text-gray-700 hover:text-teal-600 px-3 py-2 rounded-md text-sm font-medium transition">About</a>
+                        <a href="#team" class="text-gray-700 hover:text-teal-600 px-3 py-2 rounded-md text-sm font-medium transition">Team</a>
+                        <a href="#services" class="text-gray-700 hover:text-teal-600 px-3 py-2 rounded-md text-sm font-medium transition">Services</a>
+                        <a href="#contact" class="text-gray-700 hover:text-teal-600 px-3 py-2 rounded-md text-sm font-medium transition">Contact</a>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block text-gray-700 hover:bg-teal-50 px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about" class="block text-gray-700 hover:bg-teal-50 px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#team" class="block text-gray-700 hover:bg-teal-50 px-3 py-2 rounded-md text-base font-medium">Team</a>
+                <a href="#services" class="block text-gray-700 hover:bg-teal-50 px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#contact" class="block text-gray-700 hover:bg-teal-50 px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <section id="home" class="bg-teal-800 pt-24 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    Building Connected Infrastructure
+                </h1>
+                <p class="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">
+                    Delivering cutting-edge network solutions that empower businesses to thrive in the digital age
+                </p>
+                <a href="#contact" class="inline-block bg-white text-teal-600 px-8 py-3 rounded-lg font-semibold hover:bg-grey-600 hover:text-teal-500 transition shadow-lg">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Us</h2>
+                <div class="w-20 h-1 bg-teal-600 mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed text-center">
+                    NetConnect Solutions is a premier network infrastructure company dedicated to transforming how businesses connect, communicate, and collaborate. With over a decade of expertise in designing, implementing, and managing sophisticated network architectures, we have established ourselves as trusted partners for organizations seeking reliable and scalable connectivity solutions.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed text-center">
+                    Our commitment to excellence is reflected in every project we undertake. We leverage cutting-edge technologies and industry best practices to deliver network infrastructures that not only meet today's demands but are also engineered to scale seamlessly with your future growth. From small businesses to enterprise-level corporations, we provide tailored solutions that drive operational efficiency, enhance security, and maximize return on investment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Leadership Team</h2>
+                <div class="w-20 h-1 bg-teal-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-64 flex items-center justify-center">
+                        <img src="image/michel.jpg" alt="michael anderson" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">Michael Anderson</h3>
+                        <p class="text-teal-600 font-semibold mb-3">Chief Executive Officer</p>
+                        <p class="text-gray-600 text-sm">Leading strategic vision and business development with 15+ years in network infrastructure</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-64 flex items-center justify-center">
+                        <img src="image/sarah-chen.jpg" alt="Sarah Chen" class="h-full w-full object-cover">
+                    </div>      
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">Sarah Chen</h3>
+                        <p class="text-teal-600 font-semibold mb-3">Chief Technology Officer</p>
+                        <p class="text-gray-600 text-sm">Driving innovation and technical excellence with expertise in cloud and network architecture</p>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-64 flex items-center justify-center">
+                        <img src="image/david.jpg" alt="David Rodriguez" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">David Rodriguez</h3>
+                        <p class="text-teal-600 font-semibold mb-3">Chief Operations Officer</p>
+                        <p class="text-gray-600 text-sm">Ensuring operational excellence and client satisfaction through streamlined processes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <div class="w-20 h-1 bg-teal-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-teal-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Network Design & Architecture</h3>
+                    <p class="text-gray-600">Custom network infrastructure design tailored to your business requirements, ensuring optimal performance and scalability.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-teal-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Network Security Solutions</h3>
+                    <p class="text-gray-600">Comprehensive security implementation including firewalls, VPNs, intrusion detection, and access control systems.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-teal-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Cloud Network Integration</h3>
+                    <p class="text-gray-600">Seamless integration of on-premise infrastructure with cloud platforms for hybrid and multi-cloud environments.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-teal-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Network Monitoring & Management</h3>
+                    <p class="text-gray-600">24/7 network monitoring and proactive management to ensure maximum uptime and optimal performance.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-teal-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Structured Cabling Systems</h3>
+                    <p class="text-gray-600">Professional installation of copper and fiber optic cabling infrastructure for reliable data transmission.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-teal-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Network Consulting & Support</h3>
+                    <p class="text-gray-600">Expert consultation and dedicated technical support to help you make informed network infrastructure decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-teal-600 mx-auto"></div>
+            </div>
+            <div class="max-w-2xl mx-auto">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-700 transition shadow-lg">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+                <div id="form-message" class="mt-4 text-center hidden"></div>
+            </div>
+        </div>
+    </section>  
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025. Made With ❤️</p>
+        </div>
+    </footer>
+</body>
+
+<script src="js/script.js"></script>
+</html>
